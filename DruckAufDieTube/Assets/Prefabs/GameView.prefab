@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6421298955354881172}
   - component: {fileID: 6421298955354881171}
+  - component: {fileID: 6877756881735388535}
+  - component: {fileID: 8383574483345703040}
+  - component: {fileID: 3710756860892021469}
   m_Layer: 5
   m_Name: GameView
   m_TagString: Untagged
@@ -49,3 +52,49 @@ MonoBehaviour:
   sourceAsset: {fileID: 9197481963319205126, guid: fdf0f728daefffd4ba3f8180375baafd,
     type: 3}
   m_SortingOrder: 0
+--- !u!114 &6877756881735388535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6421298955354881170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da6c9d46e78cc64cbab147b51c51071, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+--- !u!114 &8383574483345703040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6421298955354881170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76841d234e481384ba4b9de82124a660, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UIDocument: {fileID: 0}
+--- !u!114 &3710756860892021469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6421298955354881170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d639fe85a184b84396b50e3234e84f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
