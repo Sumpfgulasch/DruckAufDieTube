@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-[RequireComponent(typeof(Stopwatch))]
+[RequireComponent(typeof(Stopwatch), typeof(UIDocument))]
 public class TimerUI : MonoBehaviour
 {
 
@@ -17,9 +17,9 @@ public class TimerUI : MonoBehaviour
         UI_Doc = this.transform.GetComponent<UIDocument>();
         stopwatch = this.transform.GetComponent<Stopwatch>();
 
-        if (UI_Doc == null)
+        if (UI_Doc == null || stopwatch == null)
         {
-            Debug.LogWarning("Couldnt find UI Document - Fatal Error");
+            Debug.LogWarning("Couldnt find UI Document or Stopwatch - Fatal Error");
         }
 
         var rootElement = UI_Doc.rootVisualElement;

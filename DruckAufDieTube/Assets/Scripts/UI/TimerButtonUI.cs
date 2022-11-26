@@ -3,25 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-[RequireComponent(typeof(Stopwatch))]
+[RequireComponent(typeof(Stopwatch), typeof(UIDocument))]
 public class TimerButtonUI : MonoBehaviour
 {
-    [SerializeField] private UIDocument UI_Doc;
-
-    private Button timeLogButton;
     public bool isLoggingButton = false;
+
+    private UIDocument UI_Doc;
+    private Button timeLogButton;
 
     private Stopwatch stopwatch;
 
     public void Start()
     {
         UI_Doc = this.transform.GetComponent<UIDocument>();
-        if (UI_Doc == null)
-        {
-            Debug.LogWarning("Couldnt find UI Document - Fatal Error");
-        }
-
         stopwatch = this.transform.GetComponent<Stopwatch>();
+
+        if (UI_Doc == null || stopwatch == null)
+        {
+            Debug.LogWarning("Couldnt find UI Document or Stopwatch - Fatal Error");
+        }
 
         var rootElement = UI_Doc.rootVisualElement;
 
