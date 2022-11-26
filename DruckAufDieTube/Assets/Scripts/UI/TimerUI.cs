@@ -4,9 +4,8 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 [RequireComponent(typeof(Stopwatch), typeof(UIDocument))]
-public class GameButtonUI : MonoBehaviour
+public class TimerUI : MonoBehaviour
 {
-
     private UIDocument UI_Doc;
     private Stopwatch stopwatch;
 
@@ -41,4 +40,6 @@ public class GameButtonUI : MonoBehaviour
     {
         timerLabel.text = time.ToString();
     }
+
+
 }
