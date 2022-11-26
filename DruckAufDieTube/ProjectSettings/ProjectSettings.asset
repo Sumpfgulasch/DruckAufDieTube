@@ -875,11 +875,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 
+  cloudProjectId: 63e5741a-bd11-4c62-8a8f-09da6b41fb2f
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: DruckAufDieTube
+  organizationId: karolina-janowska
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
