@@ -8,7 +8,7 @@ public class NetworkedPlayer : NetworkBehaviour
 {
 	// thes update outomatically on both sides when changes, no need for RPC
 	private NetworkVariable<DateTime> localStartTime = new NetworkVariable<DateTime>(DateTime.MinValue, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner);
-	private NetworkVariable<DateTime> localEndTime = new NetworkVariable<DateTime>(DateTime.MinValue, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner););
+	private NetworkVariable<DateTime> localEndTime = new NetworkVariable<DateTime>(DateTime.MinValue, NetworkVariableReadPermission.Everyone, NetworkVariableWritePermission.Owner);
 
 	// Start is called before the first frame update
 	public override void OnNetworkSpawn()
@@ -87,7 +87,7 @@ public class NetworkedPlayer : NetworkBehaviour
 	private void RegisterSpawnNewButtonServerRPC() { }
 
 	[ClientRpc]
-	private void SpawnNEwButtonClientRPC()
+	private void SpawnNewButtonClientRPC()
 	{
 		// NEED CKECKING WHICH PLAYER DID WHAT WITH PLAYER IDs ETC.... EHM. PROPBABLY WILL HAVE TO SPLIT THE SERVER CODE FROM THIS PLAYER CODE LATER
 	}
