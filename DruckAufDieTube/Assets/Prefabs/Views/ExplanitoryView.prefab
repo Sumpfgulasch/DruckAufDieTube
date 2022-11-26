@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7236636846391422547}
   - component: {fileID: 7236636846391422540}
+  - component: {fileID: 7237257039764201676}
   m_Layer: 5
   m_Name: ExplanitoryView
   m_TagString: Untagged
@@ -49,3 +50,17 @@ MonoBehaviour:
   sourceAsset: {fileID: 9197481963319205126, guid: d557326bddf09174e8f730f940fc13c1,
     type: 3}
   m_SortingOrder: 0
+--- !u!114 &7237257039764201676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7236636846391422541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4513d868c5513fc40891e7b2a12bc34f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionTime: 3
+  ViewSwitchingGameObject: {fileID: 0}

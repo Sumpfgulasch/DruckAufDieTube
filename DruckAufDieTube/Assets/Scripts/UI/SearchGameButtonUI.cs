@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using Sirenix.OdinInspector;
 
 [RequireComponent(typeof(UIDocument))]
 
@@ -10,9 +11,15 @@ public class SearchGameButtonUI : MonoBehaviour
     private UIDocument UI_Doc;
     private Button searchGameButton;
 
+    [Required] public GameObject ViewSwitchingGameObject;
 
     public void Start()
     {
+        if (ViewSwitchingGameObject == null)
+        {
+            Debug.LogWarning("ViewSwitchingGameObject darf nicht null sein");
+        }
+
         UI_Doc = this.transform.GetComponent<UIDocument>();
         if (UI_Doc == null)
         {
@@ -32,6 +39,6 @@ public class SearchGameButtonUI : MonoBehaviour
 
     private void OnButtonClicked()
     {
-        //this.gameObject.SwitchViewTo("ExplanitoryView");
+        this.gameObject.SwitchViewTo(ViewSwitchingGameObject);
     }
 }

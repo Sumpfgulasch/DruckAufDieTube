@@ -12,11 +12,22 @@ public class Stopwatch : SerializedMonoBehaviour
     bool isRunning = false;
     [ShowInInspector] public bool IsRunning { get => isRunning; }
 
+    public bool startOnPlay = true;
+
 
     public event Action OnStopwatchStart;
     public event Action OnStopwatchStop;
     public event Action OnStopwatchReset;
     public event Action<float> OnTimeChange;
+
+    private void Start()
+    {
+        if (startOnPlay)
+        {
+            StartStopwatch();
+        }
+    }
+
     private void Update()
     {
         if(isRunning)

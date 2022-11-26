@@ -20,13 +20,13 @@ public static class ExtensionMethods
     }
     public static void SwitchViewTo(this GameObject currentView, GameObject newView)
     {
-    //    if (newView == null)
-    //    {
-    //        Debug.Log("Couldnt Find a the " + viewName + " - thats not good.");
-    //        return;
-    //    }
+        if (newView == null)
+        {
+            Debug.Log("Couldnt Find a the " + newView.name + " - thats not good.");
+            return;
+        }
 
-    //    newView.SetActive(true);
-    //    currentView.SetActive(false);
+        newView.SetActive(true);
+        currentView.SetActive(false);
     }
 }

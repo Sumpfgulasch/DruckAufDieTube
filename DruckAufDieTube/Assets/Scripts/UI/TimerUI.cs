@@ -14,6 +14,7 @@ public class TimerUI : MonoBehaviour
 
     public void Start()
     {
+        Debug.Log("Start");
         UI_Doc = this.transform.GetComponent<UIDocument>();
         stopwatch = this.transform.GetComponent<Stopwatch>();
 
