@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Header">
+        <ui:Label tabindex="-1" text="#PLAYERNAME has won the Game with #TIMEDIFFERENCE ms difference" display-tooltip-when-elided="true" name="WinnerText" />
+    </ui:VisualElement>
+    <ui:VisualElement name="StatisticElement">
+        <ui:VisualElement name="PlayerStatisticContainer_FirstPlace" style="flex-direction: row;">
+            <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="PlayerName_FirstPlace" />
+            <ui:VisualElement name="Progress_FirstPlace" style="width: 80%; height: 15px; background-color: rgba(250, 107, 107, 255);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="PlayerStatisticContainer_SecondPlace" style="flex-direction: row;">
+            <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="PlayerName_SecondPlace" />
+            <ui:VisualElement name="Progress_SecondPlace" style="width: 80%; height: 15px; background-color: rgb(250, 107, 107);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="Buttons" style="flex-direction: row;">
+        <ui:Button text="REPLAY" display-tooltip-when-elided="true" />
+        <ui:Button text="LOBBY" display-tooltip-when-elided="true" />
+    </ui:VisualElement>
+</ui:UXML>
