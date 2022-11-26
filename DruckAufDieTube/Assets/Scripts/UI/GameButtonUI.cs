@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 [RequireComponent(typeof(Stopwatch), typeof(UIDocument))]
-public class TimerUI : MonoBehaviour
+public class GameButtonUI : MonoBehaviour
 {
 
     private UIDocument UI_Doc;

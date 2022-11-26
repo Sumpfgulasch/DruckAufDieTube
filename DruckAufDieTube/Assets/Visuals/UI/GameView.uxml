@@ -1,4 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:Button text="Push to log in Time" display-tooltip-when-elided="true" name="TimeLogButton" />
+    <ui:Template name="LogButtonTemplate" src="project://database/Assets/Visuals/UI/LogButtonTemplate.uxml?fileID=9197481963319205126&amp;guid=96c050b1ac038724093dfd583a3bc3e4&amp;type=3#LogButtonTemplate" />
     <ui:Label tabindex="-1" text="Temporary Timer" display-tooltip-when-elided="true" name="TemporaryTimer" />
+    <ui:Instance template="LogButtonTemplate" name="LogButtonTemplate" style="flex-grow: 1; position: absolute; height: 38px; width: 207px; top: 157px; left: 182px;" />
 </ui:UXML>
