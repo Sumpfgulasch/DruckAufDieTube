@@ -51,20 +51,18 @@ public class TimerButtonUI : MonoBehaviour
 
         //Create a Random Start Button that is the Logger
         Vector2 randomPositionOnScreen = new Vector2(UnityEngine.Random.Range(0f + buttonWidthPX / 2f, Screen.width - buttonWidthPX / 2f), UnityEngine.Random.Range(0f + buttonHeightPX / 2f, Screen.height - buttonHeightPX / 2f));
-        CreateNewButton(randomPositionOnScreen, true, buttonWidthPX, buttonHeightPX);
+        CreateNewButton(randomPositionOnScreen, true, buttonWidthPX, buttonHeightPX,true);
     }
 
     private void Update()
     {
-        timeSinceLastSpawn += Time.deltaTime;
-
-        
+        timeSinceLastSpawn += Time.deltaTime;       
     }
 
-    public void CreateNewButton(Vector2 pos, bool isLoggingButton, float width, float height) // Here we could add as a Parameter on which Playerside it should be spawned
+    public void CreateNewButton(Vector2 pos, bool isLoggingButton, float width, float height, bool forceCreation = false) // Here we could add as a Parameter on which Playerside it should be spawned
     {
         // When Cooldown is not reached, dont create a button 
-        if (!CanSpawnNewButton)
+        if (!CanSpawnNewButton && !forceCreation)
         {
             return;
         }
