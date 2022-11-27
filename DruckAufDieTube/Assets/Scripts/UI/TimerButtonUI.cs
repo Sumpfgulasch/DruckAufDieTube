@@ -57,6 +57,8 @@ public class TimerButtonUI : MonoBehaviour
     private void Update()
     {
         timeSinceLastSpawn += Time.deltaTime;
+
+        
     }
 
     public void CreateNewButton(Vector2 pos, bool isLoggingButton, float width, float height) // Here we could add as a Parameter on which Playerside it should be spawned

@@ -29,6 +29,8 @@ public class TimerUI : MonoBehaviour
         timerLabel.text = stopwatch.Time.ToString();
 
         stopwatch.OnTimeChange += OnStopwatchTimeChanged;
+
+        StartCoroutine(FadeText());
     }
 
     private void OnDestroy()
@@ -38,8 +40,19 @@ public class TimerUI : MonoBehaviour
 
     private void OnStopwatchTimeChanged(float time)
     {
-        timerLabel.text = time.ToString();
+        timerLabel.text = Mathf.Floor(20f - time).ToString();
     }
 
+    IEnumerator FadeText()
+    {
+        yield return new WaitForSeconds(3f);
+        float time = 0f;
 
+        while (time < 1f)
+        {
+            time += Time.deltaTime;
+            timerLabel.style.color = new Color(timerLabel.style.color.value.r, timerLabel.style.color.value.g, timerLabel.style.color.value.b, 1f - time);
+            yield return new WaitForEndOfFrame();
+        }
+    }
 }

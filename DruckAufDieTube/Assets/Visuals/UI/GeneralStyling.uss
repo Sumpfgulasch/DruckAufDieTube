@@ -40,3 +40,11 @@
     -unity-font-definition: url('project://database/Assets/Visuals/Font/THEBOLDFONT%20SDF.asset?fileID=11400000&guid=d9318066e1ec0ca468e91d43c95f939b&type=2#THEBOLDFONT SDF');
     font-size: 30px;
 }
+
+.ProgressBar {
+    width: 209px;
+    height: 15px;
+    background-color: rgb(250, 107, 107);
+    padding-left: 0;
+    margin-left: 29px;
+}
