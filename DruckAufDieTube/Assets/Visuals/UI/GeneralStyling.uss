@@ -1,0 +1,42 @@
+.ExplainatoryText {
+    -unity-text-align: middle-center;
+    -unity-font-definition: none;
+    font-size: 18px;
+    width: auto;
+    height: auto;
+    -unity-font: url('project://database/Assets/Visuals/Font/Mont-HeavyDEMO.otf?fileID=12800000&guid=64f2bd940e75b4a408891183bc074569&type=3#Mont-HeavyDEMO');
+    justify-content: center;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.Button {
+    width: 285px;
+    height: 48px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(135, 85, 25, 0.4);
+    -unity-font: none;
+    -unity-font-definition: url('project://database/Assets/Visuals/Font/THEBOLDFONT%20SDF.asset?fileID=11400000&guid=d9318066e1ec0ca468e91d43c95f939b&type=2#THEBOLDFONT SDF');
+    font-size: 35px;
+    -unity-text-outline-width: 0;
+    text-shadow: 0 0 0 rgb(0, 0, 0);
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    -unity-text-align: upper-center;
+}
+
+.Header {
+    -unity-font: none;
+    -unity-font-style: normal;
+    -unity-font-definition: url('project://database/Assets/Visuals/Font/THEBOLDFONT%20SDF.asset?fileID=11400000&guid=d9318066e1ec0ca468e91d43c95f939b&type=2#THEBOLDFONT SDF');
+    font-size: 30px;
+}

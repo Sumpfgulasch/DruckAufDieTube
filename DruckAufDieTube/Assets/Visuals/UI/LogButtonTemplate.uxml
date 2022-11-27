@@ -1,5 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Visuals/UI/GeneralStyling.uss?fileID=7433441132597879392&amp;guid=28a7ba95ea551484bbdb4851b19a8a9b&amp;type=3#GeneralStyling" />
     <VisualElementWithBool name="LogButtonContainer" style="position: relative; top: 0; left: 0; width: auto; height: auto; flex-grow: 1;">
-        <ui:Button text="Push to log in Time" display-tooltip-when-elided="true" name="TimeLogButton" style="width: auto; height: auto; flex-grow: 1;" />
+        <ui:Button text="Push to log in Time" display-tooltip-when-elided="true" name="TimeLogButton" class="Header" style="width: auto; height: auto; flex-grow: 1; rotate: 0; transform-origin: center;" />
     </VisualElementWithBool>
 </ui:UXML>

@@ -1,5 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Visuals/UI/GeneralStyling.uss?fileID=7433441132597879392&amp;guid=28a7ba95ea551484bbdb4851b19a8a9b&amp;type=3#GeneralStyling" />
     <ui:VisualElement name="ClickArea" style="flex-grow: 1;">
-        <ui:Label tabindex="-1" text="Temporary Timer" display-tooltip-when-elided="true" name="TemporaryTimer" />
+        <ui:Label tabindex="-1" text="Temporary Timer" display-tooltip-when-elided="true" name="TemporaryTimer" class="Header" />
     </ui:VisualElement>
 </ui:UXML>

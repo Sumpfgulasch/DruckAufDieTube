@@ -6,7 +6,7 @@ using Sirenix.OdinInspector;
 
 [RequireComponent(typeof(UIDocument))]
 
-public class SearchGameButtonUI : MonoBehaviour
+public class SwitchScene_SearchGameButtonUI : MonoBehaviour
 {
     private UIDocument UI_Doc;
     private Button searchGameButton;

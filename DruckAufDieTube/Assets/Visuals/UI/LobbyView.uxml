@@ -1,3 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:Button text="Search Game" display-tooltip-when-elided="true" name="SearchGameButton" />
+    <Style src="project://database/Assets/Visuals/UI/GeneralStyling.uss?fileID=7433441132597879392&amp;guid=28a7ba95ea551484bbdb4851b19a8a9b&amp;type=3#GeneralStyling" />
+    <ui:VisualElement style="flex-grow: 1; margin-left: 154px; margin-right: 154px; margin-top: 69px; margin-bottom: 69px; flex-direction: column; align-items: center;">
+        <ui:Button text="Search Game" display-tooltip-when-elided="true" name="SearchGameButton" class="Button" />
+        <ui:Label tabindex="-1" text="The Game ends in 20 Seconds.&#10;&#10;You are paired up with &quot;Bob&quot; &#10;press the button before he does, &#10;but not after 20 seconds." display-tooltip-when-elided="true" name="Explaination" class="ExplainatoryText" />
+    </ui:VisualElement>
 </ui:UXML>

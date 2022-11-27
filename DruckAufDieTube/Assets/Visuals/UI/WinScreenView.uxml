@@ -1,19 +1,20 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Visuals/UI/GeneralStyling.uss?fileID=7433441132597879392&amp;guid=28a7ba95ea551484bbdb4851b19a8a9b&amp;type=3#GeneralStyling" />
     <ui:VisualElement name="Header">
-        <ui:Label tabindex="-1" text="#PLAYERNAME has won the Game with #TIMEDIFFERENCE ms difference" display-tooltip-when-elided="true" name="WinnerText" />
+        <ui:Label tabindex="-1" text="#PLAYERNAME has won the Game with #TIMEDIFFERENCE ms difference" display-tooltip-when-elided="true" name="WinnerText" class="Header" />
     </ui:VisualElement>
     <ui:VisualElement name="StatisticElement">
         <ui:VisualElement name="PlayerStatisticContainer_FirstPlace" style="flex-direction: row;">
-            <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="PlayerName_FirstPlace" />
+            <ui:Label tabindex="-1" text="NAME" display-tooltip-when-elided="true" name="PlayerName_FirstPlace" class="Header" />
             <ui:VisualElement name="Progress_FirstPlace" style="width: 80%; height: 15px; background-color: rgba(250, 107, 107, 255);" />
         </ui:VisualElement>
         <ui:VisualElement name="PlayerStatisticContainer_SecondPlace" style="flex-direction: row;">
-            <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="PlayerName_SecondPlace" />
+            <ui:Label tabindex="-1" text="NAME" display-tooltip-when-elided="true" name="PlayerName_SecondPlace" class="Header" />
             <ui:VisualElement name="Progress_SecondPlace" style="width: 80%; height: 15px; background-color: rgb(250, 107, 107);" />
         </ui:VisualElement>
     </ui:VisualElement>
     <ui:VisualElement name="Buttons" style="flex-direction: row;">
-        <ui:Button text="REPLAY" display-tooltip-when-elided="true" />
-        <ui:Button text="LOBBY" display-tooltip-when-elided="true" />
+        <ui:Button text="REPLAY" display-tooltip-when-elided="true" class="Button" />
+        <ui:Button text="LOBBY" display-tooltip-when-elided="true" class="Button" />
     </ui:VisualElement>
 </ui:UXML>
